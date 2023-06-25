@@ -10,7 +10,17 @@ import SwiftUI
 struct BottomSheetContentView: View {
     var body: some View {
         ScrollView {
-            
+            // Replace with your view
+            VStack{
+                HStack{
+                    Text("Content")
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                    Text("Content")
+                        .frame(minWidth: 0, maxWidth: .infinity)
+
+                }
+                .padding()
+            }
         }
         .background(Blur(radius: 25, opaque: true))
         .clipShape(RoundedRectangle(cornerRadius: 44))
@@ -38,7 +48,7 @@ struct BottomSheetContentView: View {
 struct BottomSheetContentView_Previews: PreviewProvider {
     static var previews: some View {
         BottomSheetContentView()
-            .background(Color.purple)
+            .background(Color.blue)
             .preferredColorScheme(.dark)
     }
 }

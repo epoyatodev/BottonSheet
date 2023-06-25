@@ -33,7 +33,7 @@ struct ContentView: View {
             }
 
         }
-        .background(Color.white)
+        .background(Color.blue)
     }
 }
 
